@@ -14,3 +14,14 @@ function getData() {
     header.style.display = "initial";
   });
 }
+function addShedA(items = 0) {
+    let li = document.createElement("li");
+    li.textContent = ` Your production in shed A is ${items} litres per day `;
+  
+    document.querySelector(".answer").appendChild(li);
+    console.log(typeof items);
+    sum += items;
+    incomeOverTime();
+    incomeOverMonthly();
+    // console.log(sum)
+  }
