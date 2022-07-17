@@ -31,3 +31,34 @@ ul.nav {
   height: 100%;
   overflow: auto;
 }
+li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/*li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }*/
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.main-logo {
+  margin-left: 20%;
+  padding: 1px 16px;
+}
+.logo {
+  font-family: "Oleo Script";
+  font-size: 28px;
+}
+input {
+    display: flex;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+  }
