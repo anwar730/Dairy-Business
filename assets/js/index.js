@@ -89,3 +89,21 @@ function incomeOverTime() {
       weekly.textContent = `Your weekly income is ksh ${weeklyIncome}`;
     });
 }
+function incomeOverMonthly() {
+    let monthlyIncome = sum * 45 * 7 * 4;
+    // console.log('Your Monthly Income will be ksh' + "" + weeklyIncome);
+    monthlyEvent = document
+      .getElementById("monthlyIncome")
+      .addEventListener("click", (e) => {
+        e.preventDefault();
+  
+        header = document.getElementById("header");
+        header2 = document.getElementById("header2");
+  
+        header.style.display = "none";
+        header2.style.display = "none";
+        monthly = document.getElementById("monthly_income");
+  
+        monthly.textContent = `Your monthly income for January is ksh ${monthlyIncome}`;
+      });
+  }
