@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins&family=Space+Grotesk&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c1dad6;
+  color: black;
+  font-family: "Poppins";
+}
+
+.nav-bar {
+  display: flex;
+  background-color: #21bede;
+  color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #21bede;
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
