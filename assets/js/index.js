@@ -7,4 +7,10 @@ function getData() {
     addShedB(parseInt(e.target.sB.value));
     addShedC(parseInt(e.target.sC.value));
     addShedD(parseInt(e.target.sD.value));
-  })};
+  });
+  let dailyLink = document.querySelector(".dailyLink");
+  dailyLink.addEventListener("click", () => {
+    const header = document.getElementById("header");
+    header.style.display = "initial";
+  });
+}
