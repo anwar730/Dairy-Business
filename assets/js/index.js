@@ -25,3 +25,44 @@ function addShedA(items = 0) {
     incomeOverMonthly();
     // console.log(sum)
   }
+  function addShedB(items = 0) {
+    let li = document.createElement("li");
+    li.textContent = ` Your production is shed B is ${items} litres per day`;
+  
+    document.querySelector(".answer2").appendChild(li);
+    parseInt(items, sum);
+    sum += items;
+    // console.log(sum)
+    incomeOverTime();
+    incomeOverMonthly();
+    incomeYearly();
+  }
+  
+  function addShedC(items) {
+    let li = document.createElement("li");
+    li.textContent = ` Your production in shed C is ${items} litres per day`;
+    document.querySelector(".answer3").appendChild(li);
+    parseInt(items);
+    sum += items;
+    // console.log(sum)
+    incomeOverTime();
+    incomeOverMonthly();
+    incomeYearly();
+  }
+  
+  function addShedD(items) {
+    let li = document.createElement("li");
+    li.textContent = ` Your production in shed D is ${items} litres per day`;
+  
+    document.querySelector(".answer4").appendChild(li);
+    parseInt(items);
+  
+    sum += items;
+    totalProd = document.getElementById("total-production");
+    totalProd.textContent = `Your total production is  ${sum} litres a day`;
+  
+    incomeOverTime();
+    incomeOverMonthly();
+    incomeYearly();
+    // total milk production
+  }
