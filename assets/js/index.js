@@ -66,3 +66,26 @@ function addShedA(items = 0) {
     incomeYearly();
     // total milk production
   }
+  getData();
+
+function incomeOverTime() {
+  // weekly income
+  //console.log(">>>>>>>",sum);
+  let weeklyIncome = sum * 45 * 7;
+  console.log("Your Weekly Income will be ksh" + "" + weeklyIncome);
+  weeklyEvent = document
+    .getElementById("weeklyLink")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log("sdfsdf");
+      header = document.getElementById("header");
+
+      /* const h2 = document.querySelector('.header2')
+        h2.style.display="initial";*/
+
+      header.style.display = "none";
+      weekly = document.getElementById("weekly_income");
+
+      weekly.textContent = `Your weekly income is ksh ${weeklyIncome}`;
+    });
+}
