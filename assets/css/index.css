@@ -62,3 +62,35 @@ input {
     border: none;
     border-radius: 5px;
   }
+  ul.database {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .database li{
+    border: none;
+    list-style: none;
+    direction: flex;
+  
+  }
+  .answer li{
+    border: 1px solid
+    
+  }
+  .answer2 li{
+    border: 1px solid
+    
+  }
+  .answer3 li{
+    border: 1px solid
+    
+  }
+  .answer4 li{
+    border: 1px solid
+    
+  }
+  
