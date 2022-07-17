@@ -107,3 +107,27 @@ function incomeOverMonthly() {
         monthly.textContent = `Your monthly income for January is ksh ${monthlyIncome}`;
       });
   }
+  function incomeYearly() {
+    let yearlyIncome = sum * 45 * 7 * 4 * 12;
+    //console.log('Your yearly Income will be ksh' + "" + yearlyIncome);
+    yearlyEvent = document
+      .getElementById("yearlyIncome")
+      .addEventListener("click", (e) => {
+        e.preventDefault();
+  
+        header = document.getElementById("header");
+        header2 = document.getElementById("header2");
+        header3 = document.getElementById("header3");
+  
+        /* const h2 = document.querySelector('.header2')
+          h2.style.display="initial";*/
+  
+        header.style.display = "none";
+        header2.style.display = "none";
+        header3.style.display = "none";
+  
+        yearly = document.getElementById("yearly_income");
+  
+        yearly.textContent = `Your yearly income is ksh${yearlyIncome}`;
+      });
+  }
